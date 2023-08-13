@@ -20,86 +20,128 @@
         align-items: center;
         height: 70px;
         background-color: rgb(11, 11, 138);
-
       }
-      nav ul{display: flex;
-    justify-content: center;}
-    nav ul li{
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
         list-style: none;
         margin: 0 23px;
-        
-    }
-    nav ul li a{
-      text-decoration:none ;
-      color: white;
-    }
-    nav ul li a:hover{
-      color: rgb(79, 79, 139);
-      font-size: 1.009rem;
-    }
-    .left{
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+      nav ul li a:hover {
+        color: rgb(79, 79, 139);
+        font-size: 1.009rem;
+      }
+      .left {
         font-size: 1.5rem;
-    }
-    .firstSection{
+      }
+      .firstSection {
         display: flex;
         justify-content: space-around;
-        margin: 80px 0;
+        margin: 110px 0;
         align-items: center;
-    }
-    .firstSection > div{
-width: 37%;
-    }
-    .leftsection{
-        
+      }
+      .firstSection > div {
+        width: 37%;
+      }
+      .leftsection {
         font-size: 2rem;
-    }
-    .rightsection img{
-        width:80%;
+      }
+      .rightsection img {
+        width: 80%;
         margin: 50px 0;
-    }
-    .purple{
-      color: rgb(88, 66, 187);
-    }
-    #element{
-      color:rgb(88, 66, 187);
-    }
+      }
+      .purple {
+        color: rgb(88, 66, 187);
+      }
+      #element {
+        color: rgb(88, 66, 187);
+      }
+      .secondsection {
+        max-width: 80vw;
+        margin: auto;
+        height: 80vh;
+      }
+      main hr {
+        border: 0;
+        background: purple;
+        height: 1.2px;
+        margin: 60px 84px;
+      }
+      .secondsection h1{
+        font-size: 1.9rem;
+      }
+      .textgrey{
+        color: gray;
+      }
+      .secondsection .box {
+        background: white;
+        width: 80vh;
+        height: 1px;
+        margin: 56px 0;
+        display: flex;
+      }
+      .secondsection .vertical{
+        height: 93px;
+        width: 1px;
+        background-color: white;
+        margin: 0 10%;
+        
+      }
     </style>
   </head>
   <body>
     <header>
-        <nav>
-            <div class="left">My portfolio</div>
-            <div class="right">
-              <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/">About</a></li>
-                <li><a href="/">Services</a></li>
-                <li><a href="/">Projects</a></li>
-                <li><a href="/">contact Me</a></li>
-              </ul>
-            </div>
-          </nav>
+      <nav>
+        <div class="left">My portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Services</a></li>
+            <li><a href="/">Projects</a></li>
+            <li><a href="/">contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
     </header>
     <main>
-        <section class="firstSection">
-            <div class="leftsection">Hi, my name is 
-              <span class="purple">Jilani</span>
-              <div>I am a passionate web developer</div>
-              <span id="element"></span>
-            </div>
-            <h1>hello again</h1>
-            
-            <div class="rightsection">
-<img src="work.png" alt="">
-            </div>
-        </section>
+      <section class="firstSection">
+        <div class="leftsection">
+          Hi, my name is
+          <span class="purple">Jilani</span>
+          <div>I am a passionate web developer</div>
+          <span id="element"></span>
+        </div>
+
+        <div class="rightsection">
+          <img src="work.png" alt="" />
+        </div>
+      </section>
+      <hr />
+      <section class="secondsection">
+        <span class="textgrey">What I have done so far</span>
+        <h1>Work Experience</h1>
+        <div class="box">
+          <div class="vertical"></div>
+          <div class="vertical"></div>
+          <div class="vertical"></div>
+          <div class="vertical"></div>
+        </div>
+
+      </section>
     </main>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
-      var typed = new Typed('#element', {
-        strings: ['Web Developer', 'Web designer','Digital marketer.'],
-        typeSpeed: 50,
-      });
+      // var typed = new Typed("#element", {
+      //   // strings: ["Web and Developer", "Web designer", "Digital marketer."],
+      //   typeSpeed: 50,
+      // });
     </script>
   </body>
 </html>
