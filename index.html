@@ -27,6 +27,15 @@
     nav ul li{
         list-style: none;
         margin: 0 23px;
+        
+    }
+    nav ul li a{
+      text-decoration:none ;
+      color: white;
+    }
+    nav ul li a:hover{
+      color: rgb(79, 79, 139);
+      font-size: 1.009rem;
     }
     .left{
         font-size: 1.5rem;
@@ -34,10 +43,25 @@
     .firstSection{
         display: flex;
         justify-content: space-around;
-        margin: 23px 0;
+        margin: 80px 0;
+        align-items: center;
+    }
+    .firstSection > div{
+width: 37%;
     }
     .leftsection{
-        background-color: red ;
+        
+        font-size: 2rem;
+    }
+    .rightsection img{
+        width:80%;
+        margin: 50px 0;
+    }
+    .purple{
+      color: rgb(88, 66, 187);
+    }
+    #element{
+      color:rgb(88, 66, 187);
     }
     </style>
   </head>
@@ -47,25 +71,34 @@
             <div class="left">My portfolio</div>
             <div class="right">
               <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Services</li>
-                <li>Projects</li>
-                <li>contact Me</li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Services</a></li>
+                <li><a href="/">Projects</a></li>
+                <li><a href="/">contact Me</a></li>
               </ul>
             </div>
           </nav>
     </header>
     <main>
         <section class="firstSection">
-            <div class="leftsection">left
-
+            <div class="leftsection">Hi, my name is 
+              <span class="purple">Jilani</span>
+              <div>I am a passionate web developer</div>
+              <span id="element"></span>
             </div>
-            <div class="rightsection">right
-
+            
+            <div class="rightsection">
+<img src="work.png" alt="">
             </div>
         </section>
     </main>
-  
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed('#element', {
+        strings: ['Web Developer', 'Web designer','Digital marketer.'],
+        typeSpeed: 50,
+      });
+    </script>
   </body>
 </html>
